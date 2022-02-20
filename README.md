@@ -111,7 +111,8 @@ The google sheets file can be formatted very freely.
 The following rules apply:
 1. A cell containing "Data Link ⇨" must exist in any cell in the "A" column. The entire row where this cell is located in is reserved for a column's data link.  
    The scraper iterates through all columns' data link, scrapes the corresponding data from the 42 Apply Platform, and writes it underneath this link in the next    free row.  
-   A column's data link cell can contain the following values:  
+     
+   A column's data link cell can contain the following values:
    * **Empty:** The column will be skipped, no data will be written into the next free cell. Use this if you would like to add relative data or Formulas to a cell      (example: A1=B1-C1)
    * **Any Numerical Value:** This value will always be written into the next free cell
    * **42 Apply Platform Data Link:** A link to a search-result page on the 42 Apply admin platform.
